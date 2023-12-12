@@ -26,16 +26,19 @@ header nav ul {
 
 
 header nav ul a {
+    border-radius: 5vh;
     color: black;
     font-family: sans-serif;
     font-size: 1.8vw;
-    padding: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     text-decoration: none;
 }
 
 
 header nav ul a:hover {
     background-color: #c00000;
+    border-radius: 5vh;
 }
 
 footer {
