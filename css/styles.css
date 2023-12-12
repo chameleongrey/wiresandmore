@@ -24,7 +24,7 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul: hover {
+header nav ul:hover {
     background-color: #c00000;
 }
 
