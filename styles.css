@@ -113,7 +113,7 @@ main {
 
 }
 
-.grid-container > div {
+.grid-container div {
     background-color: #3b3838;
     border-radius: .3vh;
     font-size: 30px;
