@@ -44,7 +44,7 @@ header nav ul a {
 
 
 header nav ul a:hover {
-    background-color: #c00001;
+    background-color: red;
     border-radius: .5vh;
 }
 
@@ -59,7 +59,7 @@ footer {
 
 main {
     align-items: center;
-    background-color: #3b3838;
+    background-color: red;
     display: flex;
     height: 91vh;
     margin: 0;
