@@ -40,6 +40,7 @@ footer {
   background-color: black;
   color: #ffffff;
   display: flex;
+  font-family: "Goldman", "Arial", "Helvetica", "sans-serif";
   justify-content: center;
 }
 
