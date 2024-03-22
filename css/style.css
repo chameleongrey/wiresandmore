@@ -42,6 +42,7 @@ footer {
   color: #ffffff;
   display: flex;
   font-family: "Goldman", "Arial", "Helvetica", "sans-serif";
+  font-size: 2vh;
   justify-content: center;
 }
 
