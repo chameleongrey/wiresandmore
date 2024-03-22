@@ -47,6 +47,10 @@ footer {
   width: 100vw;
 }
 
+footer p {
+  margin-left: 27vw;
+}
+
 .nav {
   display: flex;
   font-family: "Goldman", "Arial", "Helvetica", "sans-serif";
@@ -84,7 +88,7 @@ footer {
   z-index: 20;
   background-color: transparent;
   width: 100%;
-  height: calc(100vh - 8vh);
+  height: calc(100vh - 7.9vh);
 }
 
 /* ************************** */
