@@ -230,7 +230,6 @@ footer {
   }
 
   .nav ul li a {
-    border: solid 1px #000000;
     display: inherit;
     align-items: center;
     background-color: #2c3134;
@@ -238,5 +237,9 @@ footer {
     height: 20%;
     justify-content: center;
     text-decoration: none;
+  }
+
+  .border-button {
+    border: solid 1px #000000;
   }
 }
