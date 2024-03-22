@@ -59,6 +59,10 @@ footer {
   margin: 0;
 }
 
+.nav ul li a:hover {
+  background-color: #000000;
+}
+
 .desktop-hero-container {
   height: calc(100vh - 8vh);
   width:100vw
@@ -119,10 +123,6 @@ footer {
     height: 20%;
     justify-content: center;
     text-decoration: none;
-  }
-
-  .nav ul li a:hover {
-    background-color: #000000;
   }
   
 }
