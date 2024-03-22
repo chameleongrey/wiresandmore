@@ -194,4 +194,37 @@ footer {
   .desktop-hero-container {
     display: flex;
   }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 36vh - 8vh);
+    width: 100vw;
+  }
+
+  .nav ul {
+    display: inherit;
+    flex-direction: inherit;
+    height: inherit;
+    padding: 0;
+    width: 100%;
+  }
+
+  .nav ul li{
+    display: flex;
+    flex-direction: inherit;
+    height: calc(100vh - 36vh - 8vh);
+    width: 100%;
+  }
+
+  .nav ul li a {
+    border: solid 1px #000000;
+    display: inherit;
+    align-items: center;
+    background-color: #2c3134;
+    color: #ffffff;
+    height: 20%;
+    justify-content: center;
+    text-decoration: none;
+  }
 }
