@@ -46,6 +46,7 @@ footer {
 .nav { 
   display: flex;
   font-family: "Goldman", "Arial", "Helvetica", "sans-serif";
+  font-size: 2vh;
   height: calc(100vh - 8vh);
   width: 20vw;
 }
