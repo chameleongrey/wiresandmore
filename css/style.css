@@ -44,8 +44,7 @@ footer {
   font-family: "Goldman", "Arial", "Helvetica", "sans-serif";
   font-size: 1.6vh;
   justify-content: center;
-  padding-left:22vh ;
-  width: 85.5vw;
+  width: 100vw;
 }
 
 .nav {
@@ -81,11 +80,11 @@ footer {
 }
 
 .video {
-  object-fit: cover;
+  object-fit:cover;
   z-index: 20;
   background-color: transparent;
   width: 100%;
-  height: calc(100vh - 9.3vh);
+  height: calc(100vh - 8vh);
 }
 
 /* ************************** */
