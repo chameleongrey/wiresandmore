@@ -1,3 +1,15 @@
+.goldman-regular {
+  font-family: "Goldman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.goldman-bold {
+  font-family: "Goldman", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 body, 
 main {
   display: block;
@@ -31,9 +43,9 @@ footer {
   justify-content: center;
 }
 
-
 .nav { 
   display: flex;
+  font-family: "Goldman", "Arial", "Helvetica", "sans-serif";
   height: calc(100vh - 8vh);
   width: 20vw;
 }
@@ -51,9 +63,6 @@ footer {
   height: 100%;
   width: 100%;
 }
-
-
-
 
 /* ************************** */
 /* ****                   *** */
@@ -109,14 +118,11 @@ footer {
   
 }
 
-
-
 /* ************************** */
 /* ****                   *** */
 /* **** TABLET - SETTINGS *** */
 /* ****                   *** */
 /* ************************** */
-
 
 @media screen and (max-width: 759px) and (min-width: 361px) {
   
@@ -173,9 +179,6 @@ footer {
     text-decoration: none;
   }
 }  
-
-
-
 
 /* *************************** */
 /* ****                    *** */
