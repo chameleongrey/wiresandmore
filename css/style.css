@@ -79,24 +79,13 @@ footer {
   width: 80vw
 }
 
-.demoVideo {
+.video {
   object-fit: cover;
   z-index: 20;
   background-color: transparent;
   width: 100%;
   height: calc(100vh - 9.3vh);
 }
-
-#audio-control {
-  cursor:pointer;
-  padding: 10px 20px;
-  background:#000;
-  color: #fff;
-  border-radius: 4px;
-  display: inline-block;
-}
-
-
 
 /* ************************** */
 /* ****                   *** */
