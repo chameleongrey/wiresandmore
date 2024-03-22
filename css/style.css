@@ -198,8 +198,8 @@ footer {
   .nav {
     display: flex;
     flex-direction: column;
-    height: calc(100vh -  8vh);
-    width: 100vw;
+    height: calc(100vh - 8vh);
+    width: 40vw;
   }
 
   .nav ul {
