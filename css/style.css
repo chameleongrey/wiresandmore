@@ -18,7 +18,7 @@ main {
 }
 
 main {
-  height: calc(100vh - 9.3vh);
+  height: calc(100vh - 8vh);
   width: 100vw;
 }
 
@@ -45,13 +45,14 @@ footer {
   font-size: 1.6vh;
   justify-content: center;
   padding-left:22vh ;
+  width: 85.5vw;
 }
 
 .nav {
   display: flex;
   font-family: "Goldman", "Arial", "Helvetica", "sans-serif";
   font-size: 2vh;
-  height: calc(100vh - 9.3vh);
+  height: calc(100vh - 8vh);
   width: 20vw;
 }
 
@@ -75,7 +76,7 @@ footer {
 }
 
 .desktop-hero-container {
-  height: calc(100vh - 9.3vh);
+  height: calc(100vh - 8vh);
   width: 80vw
 }
 
@@ -109,7 +110,7 @@ footer {
   .nav {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 36vh - 9.3vh);
+    height: calc(100vh - 36vh - 8vh);
     width: 100vw;
   }
 
@@ -124,7 +125,7 @@ footer {
   .nav ul li {
     display: flex;
     flex-direction: inherit;
-    height: calc(100vh - 36vh - 9.3vh);
+    height: calc(100vh - 36vh - 8vh);
     width: 100%;
   }
 
@@ -172,7 +173,7 @@ footer {
   .nav {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 36vh - 9.3vh);
+    height: calc(100vh - 36vh - 8vh);
     width: 100vw;
   }
 
@@ -187,7 +188,7 @@ footer {
   .nav ul li {
     display: flex;
     flex-direction: inherit;
-    height: calc(100vh - 36vh - 9.3vh);
+    height: calc(100vh - 36vh - 8vh);
     width: 100%;
   }
 
@@ -215,7 +216,7 @@ footer {
   .nav {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 9.3vh);
+    height: calc(100vh - 8vh);
     width: 30vw;
   }
 
@@ -230,7 +231,7 @@ footer {
   .nav ul li {
     display: flex;
     flex-direction: inherit;
-    height: calc(100vh - 9.3vh);
+    height: calc(100vh - 8vh);
     width: 100%;
   }
 
