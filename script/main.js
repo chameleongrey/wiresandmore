@@ -17,3 +17,4 @@ document.getElementById("about").addEventListener('click', function () {
 document.getElementById("contact").addEventListener('click', function () {
     console.log("Contact Us");
 });
+ 
