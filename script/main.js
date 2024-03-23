@@ -17,19 +17,3 @@ document.getElementById("about").addEventListener('click', function () {
 document.getElementById("contact").addEventListener('click', function () {
     console.log("Contact Us");
 });
-
-
-
-let vid = document.getElementById("myVideo");
-
-function enableMute() { 
-  vid.muted = true;
-} 
-
-function disableMute() { 
-  vid.muted = false;
-} 
-
-function checkMute() { 
-  alert(vid.muted);
-} 
