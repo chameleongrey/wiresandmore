@@ -83,7 +83,7 @@ footer p {
   width: 80vw
 }
 
-iframe {
+.video {
   object-fit:cover;
   z-index: 20;
   background-color: transparent;
