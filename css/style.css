@@ -243,6 +243,7 @@ footer p {
     display: inherit;
     align-items: center;
     color: #ffffff;
+    font-size: 1.6vw;
     height: 20%;
     justify-content: center;
     text-decoration: none;
