@@ -134,7 +134,7 @@ footer p {
   .nav ul li {
     display: flex;
     flex-direction: inherit;
-    height: calc(100vh - 36vh - 8vh);
+    height: calc(100vh - 36vh - 3vh);
     width: 100%;
   }
 
