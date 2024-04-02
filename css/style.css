@@ -48,6 +48,9 @@ footer {
 }
 
 footer p {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   margin-left: 20vw;
 }
 
@@ -99,10 +102,12 @@ footer p {
 @media only screen and (max-width: 360px) {
   .mobile-hero-container {
     display: flex;
+    width: 100vw;
+    height: auto;
   }
 
   .mobile-hero-container img {
-    height: 36vh;
+    height: auto;
     width: 100%;
     object-fit:cover;
   }
@@ -142,6 +147,10 @@ footer p {
     height: 20%;
     justify-content: center;
     text-decoration: none;
+  }
+  
+  footer p {
+    margin-left: 0;
   }
 
 }
