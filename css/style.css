@@ -56,7 +56,7 @@ nav {
 .main-menu {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 9.33vh);
+  height: calc(100vh - 8vh);
   margin: 0;
   padding: 0;
   width: 20vw;
