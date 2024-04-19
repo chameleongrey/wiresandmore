@@ -7,46 +7,77 @@
     <title>Wires and More</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
+        <a href="#home"></a>
     </header>
+    <nav>
+        <ul class="main-menu">
+            <li><a href="#domestic"></i><i class="fa fa-home" aria-hidden="true"></i><span>DOMESTIC</span></a></li>
+            <li class="button"><a href="#commercial"></i><i class="fa fa-building" aria-hidden="true"></i><span>COMMERCIAL</span></a>
+            </li>
+            <li class="button"><a href="#testandtag"></i><i class="fa fa-plug" aria-hidden="true"></i><span>TEST & TAG</span></a>
+            </li>
+            <li class="button"><a href="#about"><i class="fa fa-question-circle" aria-hidden="true"></i><span>ABOUT US</span></a>
+            </li>
+            <li class="button"><a href="#contact"><i class="fa fa-phone" aria-hidden="true"></i><span>CONTACT US</span></a></li>
+        </ul>
+        <ul class="social-menu">
+            <div><i class="fa fa-twitter" aria-hidden="true"></i></div>
+            <div><i class="fa fa-facebook" aria-hidden="true"></i></div>
+            <div><i class="fa fa-youtube" aria-hidden="true"></i></div>
+        </ul>
+    </nav>
+
     <main>
-        <div class="mobile-hero-container">
-            <!-- Photo by Mark: https://www.pexels.com/photo/white-wooden-cupboards-2724749/ -->
-            <img class="side-image" src="images/wam.jpg" alt="">
-        </div>
-        <div class="nav">
-            <ul>
-                <li>
-                    <a class="top-button" href="#" id="domestic">DOMESTIC</a>
-                    <a class="border-button" id="commercial" href="#">COMMERCIAL</a>
-                    <a class="border-button" id="testandtag" href="#">TEST & TAG</a>
-                    <a class="border-button" id="about" href="#">ABOUT US</a>
-                    <a class="border-button" id="contact" href="#">CONTACT US</a>
-                </li>
-            </ul>
-        </div>
-        <div class="desktop-hero-container">
-            <video class="video" id="video" autoplay muted>
-                <source src="video/video.mp4" type="video/mp4">
-                <source src="video/video.ogg" type="video/ogg">
-                Your browser does not support the video tag.
-            </video>
-            <audio src="audio/audio.mp3" autoplay></audio>
-        </div>
+        <section class="home" id="home">
+            <div class="desktop-video">
+                <video class="video" id="video" src="video/video.mp4" muted autoplay></video>
+            </div>
+        </section>
+
+        <section class="domestic" id="domestic">
+            <div class="hero-image">
+                <!-- Photo by Max Vakhtbovycn: https://www.pexels.com/photo/stylish-kitchen-zone-and-living-room-in-modern-apartment-7545495/-->
+                <img src="images/domestic.jpg" alt="a white kitchen">
+            </div>
+        </section>
+
+        <section class="commercial" id="commercial">
+            <div class="hero-image">
+                <!-- Photo by Max Vakhtbovycn: https://www.pexels.com/photo/stylish-white-hall-in-big-apartment-building-6238608/ -->
+                <img src="images/commercial.jpg" alt="a white apartment foyer">
+            </div>
+        </section>
+
+        <section class="testandtag" id="testandtag">
+            <div class="hero-image">
+                <img src="images/test.png" alt="a white kitchen">
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="hero-image">
+                <!-- Photo by Mireia Iglesias: https://www.pexels.com/photo/grayscale-photo-of-the-buildings-in-a-city-by-the-sea-12178946/ -->
+                <img src="images/about.jpg" alt="a white kitchen">
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="hero-image">
+                <!--- Photo by Pixabay: https://www.pexels.com/photo/close-up-of-hand-holding-text-over-black-background-326576/ -->
+                <img src="images/contact.jpg" alt="a white kitchen">
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <p>Copyright 2023 &copy; Wires and More</p>
-    </footer>
     <script src="script/main.js"></script>
+
 </body>
 
 </html>
-<!--- Photo by Max Vakhtbovycn: https://www.pexels.com/photo/big-hall-in-minimalistic-style-in-modern-apartment-building-6238610/ -->
-<!-- Photo by Pixabay: https://www.pexels.com/photo/close-up-of-hand-holding-text-over-black-background-326576/ -->
