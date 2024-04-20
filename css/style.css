@@ -3,6 +3,11 @@
   src: url('../fonts/Goldman-Regular.ttf') format('truetype');
 }
 
+
+.wam-bg-red {
+  background-color: #e9240d;
+}
+
 main,
 body {
   margin: 0;
@@ -10,7 +15,6 @@ body {
 }
 
 header {
-  background-color: #e9240d;
   height: 4vh;
   top: 0;
   left: 0;
@@ -39,14 +43,14 @@ section {
 
 .home {
   padding-top: 4vh;
-  height: calc(100vh - 4vh);
+  height: 100vh;
 }
 
 nav {
   background-color: #000000;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 8Svh);
+  height: calc(100vh - 9.4vh);
   padding: 0;
   position: fixed;
   top: 4vh;
@@ -61,7 +65,7 @@ nav {
 .main-menu {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 8vh);
+  height: calc(100vh - 9.4vh);
   margin: 0;
   padding: 0;
   width: 20vw;
@@ -96,7 +100,6 @@ nav {
 
 
 .social-menu {
-  background-color: aqua;
   display: flex;
   flex-direction: row;
   height: 4vh;
@@ -136,7 +139,6 @@ nav {
 }
 
 .fa-youtube {
-  background: #e9240d;
   color: white;
 }
 
@@ -159,38 +161,36 @@ nav {
 
 
 .domestic {
-  height: calc(100vh - 7.9vh);
+  height: 100vh;
   width: 99vw;
 }
 
 .commercial {
-  height: calc(100vh - 7.9vh);
+  height: 100vh;
   width: 99vw;
 }
 
 .testandtag {
-  height: calc(100vh - 7.9vh);
+  height: 100vh;
   width: 99vw;
 }
 
 .aboutus {
-  height: calc(100vh - 7.9vh);
+  height: 100vh;
   width: 99vw;
 }
 
 .contactus {
-  height: calc(100vh - 7.9vh);
+  height: 100vh;
   width: 99vw;
 }
 
 footer {
   height: 4vh;
   width: 100%;
-  background-color: #16171c;
   position: fixed;
   bottom: 0;
   left: 0;
-  border-top: solid white 2px;
 }
 
 
@@ -201,29 +201,49 @@ footer {
 /* ************************** */
 @media only screen and (max-width: 360px) {
 
-  
-  .hero-image {
-    width: 100vw;
-    height: 100vh;
-    margin-left: 20vw;
-  }
-
-  .hero-image img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-  }
-
-  span {
-    visibility: hidden;
+  nav {
+    height: calc(100vh - 8vh);
+    width: 10vw;
   }
 
   .main-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: calc(100vh - 8vh);
+    width: 10vw;
+  }
 
+  .main-menu li a{
+    font-size: 6vw;
+  }
 
+  span {
+    display: none;
+  }
+
+  .section {
+    width: 100vw;
+    height: auto;
+  }
+  
+  .desktop-video {
+    margin-left: 10vw;
+  }
+
+  .video {
+    width: 90vw;
+    height: auto;
+  }
+  
+  .hero-image {
+    width: 100vw;
+    height: auto;
+  }
+
+  img {
+    width: 100vw;
+  }
+ 
+  .social-menu {
+    width: 100%;
   }
 
 }
