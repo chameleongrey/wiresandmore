@@ -243,7 +243,13 @@ footer {
   }
  
   .social-menu {
+    align-items: center;
+    justify-content: center;
     width: 100%;
+  }
+
+  .social-menu div i {
+    font-size: 5vw;
   }
 
 }
