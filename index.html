@@ -5,85 +5,294 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wires and More</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-
-    <header class="wam-bg-red">
-        <a href="#home"></a>
+    <header>
+        <div class="header-info-bar">
+            <!-- Add header information here -->
+        </div>
     </header>
     <nav>
-        <ul class="main-menu">
-            <li class="button button-top"><a href="#domestic"><i class="fa fa-home" aria-hidden="true"></i><span>DOMESTIC</span></a></li>
-            <li class="button"><a href="#commercial"><i class="fa fa-building" aria-hidden="true"></i><span>COMMERCIAL</span></a></li>
-            <li class="button"><a href="#testandtag"><i class="fa fa-plug" aria-hidden="true"></i><span>TEST & TAG</span></a></li>
-            <li class="button"><a href="#about"><i class="fa fa-question-circle" aria-hidden="true"></i><span>ABOUT US</span></a></li>
-            <li class="button"><a href="#contact"><i class="fa fa-phone" aria-hidden="true"></i><span>CONTACT US</span></a></li>
-        </ul>
+        <div class="logo-wrapper">
+            <img src="images/logo.png" alt="Wires and More Logo">
+        </div>
+        <div class="nav-wrapper">
+            <ul class="nav-links">
+                <li><a class="button-a" href="#home">Home</a></li>
+                <li><a class="button-b" href="#about">About</a></li>
+                <li><a class="button-c" href="#services">Services</a></li>
+                <li><a class="button-d" href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
-    
-
     <main>
-        <section class="home" id="home">
-            <div class="desktop-video">
-                <video class="video" id="video" src="video/video.mp4" muted autoplay></video>
+        <section class="home-grid-wrapper" id="home">
+            <div class="grid-item item-1">
+                <img class="home-image" src="images/home.jpg" alt="Home services image">
+            </div>
+            <div class="grid-item item-2">
+                <h2>ELECTRICAL</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/home/electrical.png" alt="Electrical services icon">
+                </div>
+                <div class="info-area">
+                    <p>At Wires and More, we provide comprehensive electrical services for both domestic and commercial
+                        clients. Our team of certified electricians is skilled in handling everything from new
+                        installations and upgrades to troubleshooting and repairs.<br><br>
+                        Whether you need a complete rewiring for your home or electrical system maintenance for your
+                        business, we ensure that every job is completed safely and efficiently. We pride ourselves on
+                        using the latest techniques and equipment to deliver high-quality electrical solutions that meet
+                        all safety standards.</p>
+                </div>
+            </div>
+            <div class="grid-item item-3">
+                <h2>DATA</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/home/data.png" alt="Data services icon">
+                </div>
+                <div class="info-area">
+                    <p>In today's connected world, reliable data services are essential for any home or business. Wires
+                        and More offers cutting-edge solutions for all your data management and connectivity needs. From
+                        installing high-speed internet and network systems to troubleshooting and repairs, our
+                        experienced technicians ensure that your data infrastructure is robust and efficient. <br><br>
+                        We tailor our services to meet your specific requirements, providing seamless connectivity and
+                        enhancing the overall performance of your network.</p>
+                </div>
+            </div>
+            <div class="grid-item item-4">
+                <h2>TESTING</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/home/testing.png" alt="Testing services icon">
+                </div>
+                <div class="info-area">
+                    <p>Ensuring the safety and functionality of your electrical systems is a top priority at Wires and
+                        More. Our comprehensive testing services include detailed inspections of electrical
+                        installations, appliances, and data systems. We utilize advanced testing equipment to identify
+                        potential issues and ensure that everything operates correctly. <br><br>Our test and tagging
+                        services provide peace of mind, knowing that your electrical appliances comply with safety
+                        regulations and are safe to use. We are committed to maintaining the highest safety standards in
+                        all our testing procedures.</p>
+                </div>
+            </div>
+            <div class="grid-item item-5">
+                <h2>MAINTENANCE</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/home/maintenance.png" alt="Maintenance services icon">
+                </div>
+                <div class="info-area">
+                    <p>Regular maintenance is key to the longevity and reliability of your electrical and data systems.
+                        Wires and More offers scheduled maintenance services to keep your installations in optimal
+                        condition. Our preventative maintenance plans are designed to identify and address potential
+                        problems before they become major issues, saving you time and money in the long run. Whether
+                        it's routine checks, system updates, or emergency repairs, our team is ready to provide the
+                        support you need to keep your systems running smoothly.</p>
+                </div>
+            </div>
+            <div class="grid-item item-6">
+                <h3>"Trusted experts in electrical and data services, providing reliable solutions for homes and
+                    businesses for 30 years."</h3>
             </div>
         </section>
-
-        <section class="domestic" id="domestic">
-            <div class="hero-image">
-                <!-- Photo by Max Vakhtbovycn: https://www.pexels.com/photo/stylish-kitchen-zone-and-living-room-in-modern-apartment-7545495/-->
-                <img src="images/domestic.jpg" alt="a white kitchen">
+        <section class="about-grid-wrapper" id="about">
+            <div class="grid-item item-1">
+                <img class="about-image" src="images/about.jpg" alt="City buildings in black and white">
+            </div>
+            <div class="grid-item item-2">
+                <h2>OUR STORY</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/about/story.png" alt="Story icon">
+                </div>
+                <div class="info-area">
+                    <p> Wires and More started with a simple mission: to provide reliable and high-quality electrical
+                        and data services to both homes and businesses. Over the years, we have grown into a trusted
+                        name in the industry, known for our commitment to excellence and customer satisfaction.<br><br>
+                        Our story is one of passion, dedication, and a relentless pursuit of perfection in every
+                        project we undertake. From humble beginnings to becoming industry leaders, we continue to
+                        uphold the principles of integrity, professionalism, and innovation that have been the
+                        cornerstone of our success.</p>
+                </div>
+            </div>
+            <div class="grid-item item-3">
+                <h2>EXPERTISE</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/about/expert.png" alt="Expertise icon">
+                </div>
+                <div class="info-area">
+                    <p>Discover our specialized skills in electrical and data services. Our team of professionals
+                        possesses extensive knowledge and experience in the industry, allowing us to tackle any project
+                        with confidence. We are proficient in the latest technologies and techniques, ensuring that we
+                        provide innovative solutions tailored to your needs. Whether it's a complex data network
+                        installation or a simple electrical repair, our expertise guarantees a job well done every time.
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item item-4">
+                <h2>COMMITMENT</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/about/commitment.png" alt="Commitment icon">
+                </div>
+                <div class="info-area">
+                    <p>Our dedication to delivering personalized solutions that exceed expectations. At Wires and More,
+                        we believe that every client deserves individualized attention and bespoke services. We take the
+                        time to understand your specific requirements and work closely with you to develop solutions
+                        that meet and exceed your expectations. Our commitment to excellence is reflected in the quality
+                        of our work and the satisfaction of our clients. We strive to build long-lasting relationships
+                        based on trust and reliability.</p>
+                </div>
+            </div>
+            <div class="grid-item item-5">
+                <h2>COMMUNITY</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/about/community.png" alt="Community icon">
+                </div>
+                <div class="info-area">
+                    <p>How we contribute positively to our local community and beyond. Wires and More is not just a
+                        business; we are a part of the community. We actively participate in local initiatives and
+                        support various community programs. Our goal is to make a positive impact not only through our
+                        services but also by giving back to the community that has supported us. We believe in the power
+                        of community and are dedicated to making a difference in the lives of those around us.</p>
+                </div>
+            </div>
+            <div class="grid-item item-6">
+                <h3>"Discover our journey of innovation and commitment to excellence in electrical and data services."
+                </h3>
             </div>
         </section>
-
-        <section class="commercial" id="commercial">
-            <div class="hero-image">
-                <!-- Photo by Max Vakhtbovycn: https://www.pexels.com/photo/stylish-white-hall-in-big-apartment-building-6238608/ -->
-                <img src="images/commercial.jpg" alt="a white apartment foyer">
+        <section class="services-grid-wrapper" id="services">
+            <div class="grid-item item-1">
+                <img class="services-image" src="images/services.jpg" alt="Services overview image">
+            </div>
+            <div class="grid-item item-2">
+                <h2>ELECTRICAL SOLUTION</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/services/solution.png" alt="Electrical solution icon">
+                </div>
+                <div class="info-area">
+                    <p>Comprehensive services from installation to maintenance. Wires and More offers a wide range of
+                        electrical solutions tailored to meet the needs of both residential and commercial clients. Our
+                        services include new installations, system upgrades, repairs, and maintenance. We use
+                        high-quality materials and adhere to strict safety standards to ensure reliable and efficient
+                        electrical systems. Whether you're building a new home, renovating an office, or need emergency
+                        repairs, our team is here to help.</p>
+                </div>
+            </div>
+            <div class="grid-item item-3">
+                <h2>DATA SERVICES</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/services/data.png" alt="Data services icon">
+                </div>
+                <div class="info-area">
+                    <p>Cutting-edge solutions for data management and connectivity. Our data services are designed to
+                        provide seamless and efficient connectivity for your home or business. From setting up secure
+                        networks to installing high-speed internet, we ensure that your data infrastructure is robust
+                        and reliable. Our technicians are skilled in the latest technologies and can provide solutions
+                        that enhance your productivity and connectivity. We also offer ongoing support and maintenance
+                        to keep your systems running smoothly.</p>
+                </div>
+            </div>
+            <div class="grid-item item-4">
+                <h2>CONSULTATION</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/services/consult.png" alt="Consultation icon">
+                </div>
+                <div class="info-area">
+                    <p>Expert advice tailored to your specific needs and goals. At Wires and More, we understand that
+                        every project is unique. That's why we offer personalized consultation services to help you make
+                        informed decisions about your electrical and data needs. Our experts will assess your
+                        requirements, provide recommendations, and develop a comprehensive plan that aligns with your
+                        goals. Whether you're planning a new installation or need advice on upgrading your current
+                        systems, our consultation services are designed to provide the guidance you need.</p>
+                </div>
+            </div>
+            <div class="grid-item item-5">
+                <h2>CUSTOMIZATION</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/services/customise.png" alt="Customization icon">
+                </div>
+                <div class="info-area">
+                    <p>Flexible solutions designed to meet unique requirements. We recognize that no two projects are
+                        the same, which is why we offer customized solutions to meet your specific needs. Our team works
+                        closely with you to understand your requirements and develop tailored solutions that fit your
+                        budget and timeline. From custom lighting designs to specialized data setups, we provide
+                        flexible and innovative solutions that enhance the functionality and aesthetics of your space.
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item item-6">
+                <h3>"Explore our comprehensive range of tailored solutions designed to meet your electrical and data
+                    needs."</h3>
             </div>
         </section>
-
-        <section class="testandtag" id="testandtag">
-            <div class="hero-image">
-                <img src="images/test.png" alt="a white kitchen">
+        <section class="contact-grid-wrapper" id="contact">
+            <div class="grid-item item-1">
+                <img class="contact-image" src="images/contact.jpg" alt="Contact us image">
+            </div>
+            <div class="grid-item item-2">
+                <h2>GET IN TOUCH</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/contact/touch.png" alt="Get in touch icon">
+                </div>
+                <div class="info-area">
+                    pReach out to discuss your project or service needs. At Wires and More, we are always ready to
+                    assist you with your electrical and data requirements. Whether you have a question, need a quote, or
+                    want to schedule a service, our team is here to help. Contact us via phone, email, or through our
+                    website, and we'll be happy to provide the support you need. Your satisfaction is our top priority,
+                    and we strive to make the process as easy and convenient as possible.
+                </div>
+            </div>
+            <div class="grid-item item-3">
+                <h2>SUPPORT</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/contact/support.png" alt="Support icon">
+                </div>
+                <div class="info-area">
+                    <p>Assistance and guidance from our friendly team. Our customer support team is dedicated to
+                        providing you with the best possible service. Whether you need technical support, have questions
+                        about our services, or require assistance with a project, we are here to help. Our knowledgeable
+                        and friendly staff will ensure that you receive the guidance and support you need, every step of
+                        the way.</p>
+                </div>
+            </div>
+            <div class="grid-item item-4">
+                <h2>LOCATION</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/contact/location.png" alt="Location icon">
+                </div>
+                <div class="info-area">
+                    <p>Find our offices or service points near you. Wires and More operates in multiple locations to
+                        better serve our clients. Visit our website to find the office or service point nearest to you.
+                        Our locations are strategically placed to provide quick and efficient service, ensuring that we
+                        can meet your needs promptly. We look forward to serving you at one of our convenient locations.
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item item-5">
+                <h2>SERVICE HOURS</h2>
+                <div class="grid-item-img">
+                    <img src="images/icons/contact/hours.png" alt="Service hours icon">
+                </div>
+                <div class="info-area">
+                    <p>Details about when we are available to assist you. Our service hours are designed to accommodate
+                        your busy schedule. We offer flexible hours to ensure that you can receive the services you need
+                        when it's most convenient for you. Visit our website or contact us directly to learn more about
+                        our service hours and to schedule an appointment. We are committed to providing timely and
+                        reliable service to all our clients.</p>
+                </div>
+            </div>
+            <div class="grid-item item-6">
+                <h3>"Connect with us to experience our dedicated support and seamless solutions for your home or
+                    business."</h3>
             </div>
         </section>
-
-        <section class="about" id="about">
-            <div class="hero-image">
-                <!-- Photo by Mireia Iglesias: https://www.pexels.com/photo/grayscale-photo-of-the-buildings-in-a-city-by-the-sea-12178946/ -->
-                <img src="images/about.jpg" alt="a white kitchen">
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <div class="hero-image">
-                <!--- Photo by Pixabay: https://www.pexels.com/photo/close-up-of-hand-holding-text-over-black-background-326576/ -->
-                <img src="images/contact.jpg" alt="a white kitchen">
-            </div>
-        </section>
-
     </main>
-
-    <footer class="">
-        <ul class="social-menu">
-            <div><i class="fa fa-twitter" id="twitter" aria-hidden="true"></i></div>
-            <div><i class="fa fa-facebook" id="facebook" aria-hidden="true"></i></div>
-            <div><i class="fa fa-youtube wam-bg-red" id="youtube" aria-hidden="true"></i></div>
-        </ul>
-    </footer>
-
-
-
-
-
-    <script src="script/main.js"></script>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
