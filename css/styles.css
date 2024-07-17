@@ -224,6 +224,10 @@ main {
     border-radius: 0 0 10px 10px;
     border: solid 3px var(--wam-light-gry);
     font-size: 1.8vh;
+    text-align: justify;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    hyphens: manual;
 }
 
 .info-area p {
@@ -242,9 +246,6 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .header-info-bar {
-        background: red;
-    }
 
     .home-grid-wrapper,
     .about-grid-wrapper,
@@ -276,9 +277,7 @@ footer {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .header-info-bar {
-        background: green;
-    }
+
 
     .home-grid-wrapper,
     .about-grid-wrapper,
@@ -310,9 +309,7 @@ footer {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .header-info-bar {
-        background: blue;
-    }
+
 
     .home-grid-wrapper,
     .about-grid-wrapper,
@@ -344,9 +341,6 @@ footer {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .header-info-bar {
-        background: orange;
-    }
 
     .home-grid-wrapper,
     .about-grid-wrapper,
@@ -378,9 +372,6 @@ footer {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .header-info-bar {
-        background: pink;
-    }
 
     .home-grid-wrapper,
     .about-grid-wrapper,

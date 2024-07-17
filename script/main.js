@@ -15,7 +15,7 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
                     item.style.visibility = 'hidden';
                 });
             } else {
-                offsetTop -= .9 * window.innerHeight / 100;
+                offsetTop -= .1 * window.innerHeight / 100;
             }
 
             window.scrollTo({
