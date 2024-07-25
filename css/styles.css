@@ -155,13 +155,13 @@ nav ul {
 
     .img-wrapper {
         height: auto;
-        max-height: 18vh;
+        max-height: 28vh;
         background-color: red;
     }
 
     .img-wrapper img {
         object-fit: cover;
-        height: 18vh;
+        height: 28vh;
     }
 
 
