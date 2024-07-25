@@ -19,7 +19,7 @@ main {
 
 header {
     display: block;
-    background-color: red;
+    background-color: var(--wam-red);
     height: 3vh;
     width: 100vw;
     position: fixed;
@@ -133,7 +133,7 @@ nav ul {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     header {
-        background-color: red;
+        background-color: blue;
     }
 
     .home,
@@ -156,7 +156,7 @@ nav ul {
     .img-wrapper {
         height: auto;
         max-height: 28vh;
-        background-color: red;
+        background-color: var(--wam-red);
     }
 
     .img-wrapper img {
@@ -170,7 +170,7 @@ nav ul {
         grid-template-rows: 5vh 31.5vh 31.5vh 31.5vh 31.5vh;
         grid-gap: 1vh;
         padding: 1vh;
-        background-color: red;
+        background-color: var(--wam-red);
         height: auto;
     }
 
@@ -226,7 +226,7 @@ nav ul {
         grid-template-rows: 5vh 25.5vh 25.5vh 25.5vh 25.5vh;
         grid-gap: 1vh;
         padding: 1vh;
-        background-color: red;
+        background-color: var(--wam-red);
         height: auto;
     }
 
@@ -281,7 +281,7 @@ nav ul {
         grid-template-rows: 5vh 25.5vh 25.5vh;
         grid-gap: 1vh;
         padding: 1vh;
-        background-color: red;
+        background-color: var(--wam-red);
         height: auto;
     }
 
@@ -336,7 +336,7 @@ nav ul {
         grid-template-rows: 5vh 25.5vh 25.5vh;
         grid-gap: 1vh;
         padding: 1vh;
-        background-color: red;
+        background-color: var(--wam-red);
         height: auto;
     }
 
@@ -365,7 +365,7 @@ nav ul {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     header {
-        background-color: blue;
+        background-color: red;
     }
 
     .img-wrapper {
