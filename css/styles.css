@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+.orbitron {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
 :root {
     --wam-red: #eb1c24;
     --wam-wht: #ffffff;
     --wam-dark-gry: #191d1e;
     --wam-med-gry: #24303a;
-    --wam-light-gry: #eef2f0;
+    --wam-light-gry: #dcdddd;
+
+    --menu-font: 'Roboto', sans-serif;
 }
 
 * {
@@ -11,55 +22,145 @@
     padding: 0px;
 }
 
-main {
-    display: flex;
-    height: auto;
-    width: 99.2vw;
-}
-
 header {
-    display: block;
     background-color: var(--wam-red);
+    display: block;
     height: 3vh;
-    width: 100vw;
+    left: 0;
     position: fixed;
     top: 0;
-    left: 0;
+    width: 100%;
     z-index: 999;
 }
 
+/* ************************************* */
+/* *             NAV SETTINGS            */
+/* ************************************* */
 nav {
+    align-items: center;
+    background-color: var(--wam-wht);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
     height: 7vh;
-    width: 100vw;
+    justify-content: space-between;
+    left: 0;
     position: fixed;
     top: 3vh;
-    left: 0;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 100%;
     z-index: 999;
-    background-color: #fff;
 }
 
-nav ul {
-    padding: 0;
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2vh;
+}
+
+.logo img {
+    max-height: 70%;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    width: auto;
+    margin-right: 2vh;
+    padding-left: 2vh;
+}
+
+.menu li {
+    margin: 0 1vh;
+}
+
+.menu li a {
+    font-family: var(--menu-font);
+    font-size: 1.1em;
+    color: var(--wam-dark-gry);
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: var(--wam-light-gry);
+}
+
+.menu li a:active {
+    background-color: var(--wam-light-gry);
+}
+
+.menu-item {
+    display: flex;
 }
 
 
+/* CSS for the Dropdown Menu */
+.navbar .dropdown {
+    display: none;
+    position: absolute;
+    background-color: var(--wam-wht);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 100%;
+    top: 7vh;
+    left: 0;
+    z-index: 998;
+    flex-direction: column;
+    border-bottom: solid 2px red;
+}
+
+.navbar .dropdown .dropdown-menu-item {
+    text-align: center;
+    border-top: solid 1px grey;
+    height: 6vh;
+}
+
+.navbar .dropdown .dropdown-menu-item a {
+    color: var(--wam-dark-gry);
+    text-decoration: none;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar .dropdown .dropdown-menu-item a:hover {
+    background-color: var(--wam-light-gry);
+}
+
+/* Display the dropdown when the icon is clicked */
+.navbar .icon.active+.dropdown {
+    display: flex;
+}
+
+.fa {
+    display: flex;
+    font-size: 2em;
+    color: var(--wam-dark-gry);
+}
+
+/* ************************************* */
+/* *          MAIN PAGE SETTINGS         */
+/* ************************************* */
 /* --- MAIN PAGE --- */
 .home,
 .electrical,
 .data,
 .testing,
-.maintenance,
 .contact {
     display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
     height: 100vh;
     width: 100%;
 }
 
 .top-wrapper {
+    background-color: #808080;
     height: 10vh;
     width: 100%;
-    background-color: #808080;
 }
 
 .img-wrapper {
@@ -69,8 +170,8 @@ nav ul {
 
 .img-wrapper img {
     height: 100%;
-    width: 100%;
     object-fit: cover;
+    width: 100%;
 }
 
 .electrical .img-wrapper img {
@@ -82,29 +183,33 @@ nav ul {
 }
 
 .msg-wrapper {
-    display: grid;
-    grid-template-rows: 10% 86%;
-    grid-template-columns: calc(25% - 8px) calc(25% - 8px) calc(25% - 8px) calc(25% - 8px);
-    grid-gap: 10px;
-    height: calc(20vh - 20px);
-    padding: 10px;
-    justify-content: center;
     background-color: var(--wam-red);
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, calc(25% - 8px));
+    grid-template-rows: 10% 86%;
+    height: calc(20vh - 20px);
+    justify-content: center;
+    padding: 10px;
 }
 
 .msg-wrapper .item-1 {
     grid-column: 1 / span 4;
-
 }
 
 .tip-wrapper {
     display: grid;
-    grid-template-rows: 10% 86%;
-    grid-template-columns: calc(25% - 8px) calc(25% - 8px) calc(25% - 8px) calc(25% - 8px);
     grid-gap: 10px;
+    grid-template-columns: repeat(4, calc(25% - 8px));
+    grid-template-rows: 10% 86%;
     height: calc(20vh - 20px);
-    padding: 10px;
     justify-content: center;
+    padding: 10px;
+}
+
+.title-item {
+    grid-column: 1 / span 4;
+    text-align: center;
 }
 
 .tip-wrapper .item-1 {
@@ -115,32 +220,42 @@ nav ul {
     filter: grayscale(100%);
 }
 
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.client {
+    filter: grayscale(100%);
+    height: 50%;
+    width: auto;
+}
 
-.footer {
-    height: 3vh;
+footer {
+    align-items: center;
     background-color: #000;
+    display: flex;
+    height: 3vh;
+    justify-content: center;
+    width: 100%;
 }
 
-
-/* TODO: REMOVE BEFORE UPLOAD
-.msg-wrapper div,
-.tip-wrapper div {
-    background-color: aqua;
+small {
+    color: #fff;
 }
-*/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    header {
-        background-color: blue;
+    .logo img {
+        max-height: 50%;
+        width: auto;
     }
 
     .home,
     .electrical,
     .data,
     .testing,
-    .maintenance,
     .contact {
         height: auto;
     }
@@ -148,7 +263,6 @@ nav ul {
     .electrical .top-wrapper,
     .data .top-wrapper,
     .testing .top-wrapper,
-    .maintenance .top-wrapper,
     .contact .top-wrapper {
         display: none;
     }
@@ -163,7 +277,6 @@ nav ul {
         object-fit: cover;
         height: 28vh;
     }
-
 
     .msg-wrapper {
         grid-template-columns: repeat(4, 1fr);
@@ -194,20 +307,53 @@ nav ul {
         display: none;
     }
 
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        width: 50%;
+        padding-right: 2ch;
+    }
+
+    .menu li a {
+        font-size: 14px;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .fa {
+        display: flex;
+    }
+
 }
 
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+    .menu li a {
+        font-size: 12px;
+    }
+
+    .img-wrapper {
+        max-height: 20vh;
+    }
+
+    .img-wrapper img {
+        height: 20vh;
+    }
+
+    .msg-wrapper {
+        grid-template-rows: 5vh 25vh 25vh 25vh 25vh;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    header {
-        background-color: orangered;
-    }
 
     .home,
     .electrical,
     .data,
     .testing,
-    .maintenance,
     .contact {
         height: auto;
     }
@@ -219,7 +365,6 @@ nav ul {
     .img-wrapper img {
         object-fit: cover;
     }
-
 
     .msg-wrapper {
         grid-template-columns: repeat(4, 1fr);
@@ -249,20 +394,53 @@ nav ul {
     .tip-wrapper {
         display: none;
     }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        width: 50%;
+        padding-right: 2ch;
+    }
+
+    .menu li a {
+        font-size: 16px;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .fa {
+        display: flex;
+    }
 }
 
+@media only screen and (min-width: 600px) and (orientation: landscape) {
+    .menu li a {
+        font-size: 14px;
+    }
+
+    .img-wrapper {
+        height: 25vh;
+    }
+
+    .img-wrapper img {
+        height: 25vh;
+    }
+
+    .msg-wrapper {
+        grid-template-rows: 5vh 20vh 20vh 20vh 20vh;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    header {
-        background-color: yellow;
-    }
 
     .home,
     .electrical,
     .data,
     .testing,
-    .maintenance,
     .contact {
         height: auto;
     }
@@ -274,7 +452,6 @@ nav ul {
     .img-wrapper img {
         object-fit: cover;
     }
-
 
     .msg-wrapper {
         grid-template-columns: repeat(4, 1fr);
@@ -304,20 +481,53 @@ nav ul {
     .tip-wrapper {
         display: none;
     }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        width: 50%;
+        padding-right: 2ch;
+    }
+
+    .menu li a {
+        font-size: 18px;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .fa {
+        display: flex;
+    }
 }
 
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .menu li a {
+        font-size: 16px;
+    }
+
+    .img-wrapper {
+        height: 28vh;
+    }
+
+    .img-wrapper img {
+        height: 28vh;
+    }
+
+    .msg-wrapper {
+        grid-template-rows: 5vh 22vh 22vh 22vh;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    header {
-        background-color: green;
-    }
 
     .home,
     .electrical,
     .data,
     .testing,
-    .maintenance,
     .contact {
         height: auto;
     }
@@ -329,7 +539,6 @@ nav ul {
     .img-wrapper img {
         object-fit: cover;
     }
-
 
     .msg-wrapper {
         grid-template-columns: repeat(4, 1fr);
@@ -359,14 +568,53 @@ nav ul {
     .tip-wrapper {
         display: none;
     }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        width: 50%;
+        padding-right: 2ch;
+    }
+
+    .menu li a {
+        font-size: 20px;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .fa {
+        display: flex;
+    }
 }
 
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    .menu li a {
+        font-size: 18px;
+    }
+
+    .img-wrapper {
+        height: 32vh;
+    }
+
+    .img-wrapper img {
+        height: 32vh;
+    }
+
+    .msg-wrapper {
+        grid-template-rows: 5vh 25vh 25vh;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     header {
-        background-color: red;
+        background-color: var(--wam-red);
     }
+
+
 
     .img-wrapper {
         height: 50vh;
@@ -408,5 +656,32 @@ nav ul {
 
     .tip-wrapper {
         display: grid;
+    }
+
+    .menu-item {
+        display: flex;
+    }
+
+
+    .fa {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (orientation: landscape) {
+    .menu li a {
+        font-size: 22px;
+    }
+
+    .img-wrapper {
+        height: 48vh;
+    }
+
+    .img-wrapper img {
+        height: 48vh;
+    }
+
+    .msg-wrapper {
+        grid-template-rows: 10% 80%;
     }
 }

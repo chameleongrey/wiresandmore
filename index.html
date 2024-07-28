@@ -4,170 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wires and More</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <title>Wires and More</title>
 </head>
 
 <body>
+    <!-- Header Section -->
     <header></header>
-    <nav>
-        <div class="logo-wrapper">
-            <img src="" alt="">
+    <!-- Nav Section -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Wires and More Logo">
         </div>
-        <div class="menu-wrapper">
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </div>
-        <div class="icon-wrapper">
-
-        </div>
+        <ul class="menu">
+            <li class="menu-item active"><a href="#home">Home</a></li>
+            <li class="menu-item"><a href="#electrical">Electrical</a></li>
+            <li class="menu-item"><a href="#data">Data</a></li>
+            <li class="menu-item"><a href="#testing">Testing</a></li>
+            <li class="menu-item contact-item"><a href="#contact">Contact</a></li>
+            <li class="icon"><a href="javascript:void(0);" class="menu-icon" onclick="toggleMenu()"><i
+                        class="fa fa-bars"></i></a></li>
+        </ul>
+        <ul class="dropdown" id="dropdown-menu">
+            <li class="dropdown-menu-item active"><a href="#home">Home</a></li>
+            <li class="dropdown-menu-item"><a href="#electrical">Electrical</a></li>
+            <li class="dropdown-menu-item"><a href="#data">Data</a></li>
+            <li class="dropdown-menu-item"><a href="#testing">Testing</a></li>
+            <li class="dropdown-menu-item contact-item"><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    <!-- Home Section-->
-    <div class="home">
-        <div class="top-wrapper">
-            <p></p>
+    <main>
+        <!-- Home Section -->
+        <div id="home" class="home">
+            <div class="top-wrapper"></div>
+            <div class="img-wrapper">
+                <img src="images/image1.jpg" alt="Black and white photo of Melbourne buildings">
+            </div>
+            <div class="msg-wrapper">
+                <div class="item item-1 title-item">About Us</div>
+                <div class="item item-2">Message 1</div>
+                <div class="item item-3">Message 2</div>
+                <div class="item item-4">Message 3</div>
+                <div class="item item-5">Message 4</div>
+            </div>
+            <div class="tip-wrapper">
+                <div class="item item-1 title-item">Featured Clients</div>
+                <div class="item item-2"><img class="client client-1" src="images/client1.png" alt="Client 1"></div>
+                <div class="item item-3"><img class="client client-2" src="images/client1.png" alt="Client 2"></div>
+                <div class="item item-4"><img class="client client-3" src="images/client1.png" alt="Client 3"></div>
+                <div class="item item-5"><img class="client client-4" src="images/client1.png" alt="Client 4"></div>
+            </div>
         </div>
-        <div class="img-wrapper">
-            <img src="images/image1.jpg" alt="black and white photo of melbourne buildings">
+        <!-- Electrical Section -->
+        <div id="electrical" class="electrical">
+            <div class="top-wrapper"></div>
+            <div class="img-wrapper">
+                <img src="images/image2.jpg" alt="Black and white photo of Melbourne buildings">
+            </div>
+            <div class="msg-wrapper">
+                <div class="item item-1 title-item">Electrical</div>
+                <div class="item item-2">Installations</div>
+                <div class="item item-3">Repairs</div>
+                <div class="item item-4">Fault Finding</div>
+                <div class="item item-5">Message 4</div>
+            </div>
+            <div class="tip-wrapper">
+                <div class="item item-1 title-item">Title 2</div>
+                <div class="item item-2">Tip 1</div>
+                <div class="item item-3">Tip 2</div>
+                <div class="item item-4">Tip 3</div>
+                <div class="item item-5">Tip 4</div>
+            </div>
         </div>
-        <div class="msg-wrapper">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-            <div class="item-4"></div>
-            <div class="item-5"></div>
+        <!-- Data Section -->
+        <div id="data" class="data">
+            <div class="top-wrapper"></div>
+            <div class="img-wrapper">
+                <img src="images/image3.jpg" alt="Black and white photo of Melbourne buildings">
+            </div>
+            <div class="msg-wrapper">
+                <div class="item item-1 title-item">Title 3</div>
+                <div class="item item-2">Message 1</div>
+                <div class="item item-3">Message 2</div>
+                <div class="item item-4">Message 3</div>
+                <div class="item item-5">Message 4</div>
+            </div>
+            <div class="tip-wrapper">
+                <div class="item item-1 title-item">Title 3</div>
+                <div class="item item-2">Tip 1</div>
+                <div class="item item-3">Tip 2</div>
+                <div class="item item-4">Tip 3</div>
+                <div class="item item-5">Tip 4</div>
+            </div>
         </div>
-        <div class="tip-wrapper">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-            <div class="item-4"></div>
-            <div class="item-5"></div>
+        <!-- Testing Section -->
+        <div id="testing" class="testing">
+            <div class="top-wrapper"></div>
+            <div class="img-wrapper">
+                <img src="images/image4.jpg" alt="Black and white photo of Melbourne buildings">
+            </div>
+            <div class="msg-wrapper">
+                <div class="item item-1 title-item">Title 4</div>
+                <div class="item item-2">Message 1</div>
+                <div class="item item-3">Message 2</div>
+                <div class="item item-4">Message 3</div>
+                <div class="item item-5">Message 4</div>
+            </div>
+            <div class="tip-wrapper">
+                <div class="item item-1 title-item">Title 4</div>
+                <div class="item item-2">Tip 1</div>
+                <div class="item item-3">Tip 2</div>
+                <div class="item item-4">Tip 3</div>
+                <div class="item item-5">Tip 4</div>
+            </div>
         </div>
-    </div>
-    <!-- Electrical Section-->
-    <div class="electrical">
-        <div class="top-wrapper">
-            <p></p>
+        <!-- Contact Section -->
+        <div id="contact" class="contact">
+            <div class="top-wrapper"></div>
+            <div class="img-wrapper">
+                <img src="images/image5.jpg" alt="Black and white photo of Melbourne buildings">
+            </div>
+            <div class="msg-wrapper">
+                <div class="item item-1 title-item">Title 5</div>
+                <div class="item item-2">Message 1</div>
+                <div class="item item-3">Message 2</div>
+                <div class="item item-4">Message 3</div>
+                <div class="item item-5">Message 4</div>
+            </div>
+            <div class="tip-wrapper">
+                <div class="item item-1 title-item">FIND US ON</div>
+                <div class="item item-2"></div>
+                <div class="item item-3"><i class="fa fa-facebook-square" aria-hidden="true"></i></div>
+                <div class="item item-4"><i class="fa fa-twitter-square" aria-hidden="true"></i></div>
+                <div class="item item-5"></div>
+            </div>
         </div>
-        <div class="img-wrapper">
-            <img src="images/image2.jpg" alt="black and white photo of melbourne buildings">
-        </div>
-        <div class="msg-wrapper">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-            <div class="item-4"></div>
-            <div class="item-5"></div>
-        </div>
-        <div class="tip-wrapper">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-            <div class="item-4"></div>
-            <div class="item-5"></div>
-        </div>
-    </div>
-    <!-- Data Section-->
-    <div class="data">
-        <div class="top-wrapper">
-            <p></p>
-        </div>
-        <div class="img-wrapper">
-            <img src="images/image3.jpg" alt="black and white photo of melbourne buildings">
-        </div>
-        <div class="msg-wrapper">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-            <div class="item-4"></div>
-            <div class="item-5"></div>
-        </div>
-        <div class="tip-wrapper">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-            <div class="item-4"></div>
-            <div class="item-5"></div>
-        </div>
-    </div>
-    <!-- Testing Section-->
-    <div class="testing">
-        <div class="top-wrapper">
-            <p></p>
-        </div>
-        <div class="img-wrapper">
-            <img src="images/image4.jpg" alt="black and white photo of melbourne buildings">
-        </div>
-        <div class="msg-wrapper">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-            <div class="item-4"></div>
-            <div class="item-5"></div>
-        </div>
-        <div class="tip-wrapper">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-            <div class="item-4"></div>
-            <div class="item-5"></div>
-        </div>
-    </div>
-    <!-- Maintenance Section-->
-    <div class="maintenance">
-        <div class="top-wrapper">
-            <p></p>
-        </div>
-        <div class="img-wrapper">
-            <img src="images/image5.jpg" alt="black and white photo of melbourne buildings">
-        </div>
-        <div class="msg-wrapper">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-            <div class="item-4"></div>
-            <div class="item-5"></div>
-        </div>
-        <div class="tip-wrapper">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-            <div class="item-4"></div>
-            <div class="item-5"></div>
-        </div>
-    </div>
-    <!-- Contact Section-->
-    <div class="maintenance">
-        <div class="top-wrapper">
-            <p></p>
-        </div>
-        <div class="img-wrapper">
-            <img src="images/image6.jpg" alt="black and white photo of melbourne buildings">
-        </div>
-        <div class="msg-wrapper">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-            <div class="item-4"></div>
-            <div class="item-5"></div>
-        </div>
-        <div class="tip-wrapper">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-            <div class="item-4"></div>
-            <div class="item-5"></div>
-        </div>
-    </div>
     </main>
     <footer>
-        <small>&#169;</small>
+        <small>&copy; 2024 Wires and More</small>
     </footer>
     <script src="scripts/main.js"></script>
 </body>
