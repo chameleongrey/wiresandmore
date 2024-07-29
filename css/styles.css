@@ -247,8 +247,17 @@ small {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    header {
+        height: 1.5vh;
+    }
+
+    nav {
+        height: 8.5vh;
+        top: 1.5vh;
+    }
+
     .logo img {
-        max-height: 50%;
+        max-height: 90%;
         width: auto;
     }
 
@@ -329,7 +338,13 @@ small {
 
 }
 
-@media only screen and (max-width: 600px) and (orientation: landscape) {
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+
+    .logo img {
+        max-height: 90%;
+        width: auto;
+    }
+
     .menu li a {
         font-size: 12px;
     }
