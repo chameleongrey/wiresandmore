@@ -264,6 +264,10 @@ small {
         top: 8vh;
     }
 
+    .logo {
+        height: 80%;
+    }
+
     .logo img {
         max-height: 90%;
         width: auto;
